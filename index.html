@@ -10,7 +10,7 @@
   <title>課題確認</title>
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icon-192.png">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
   <main class="app">
@@ -22,7 +22,7 @@
 
     <section id="taskList" class="task-list" aria-label="課題一覧"></section>
 
-    <p class="hint">タップで「未」と「済」を切り替え</p>
+    <p class="hint">タップで状態を切り替え</p>
 
     <section class="class-manager" aria-label="授業登録">
       <button id="editToggleButton" class="edit-toggle-button" type="button" aria-expanded="false">
@@ -52,8 +52,18 @@
           </label>
 
           <label>
+            <span>何限目</span>
+            <input id="periodInput" type="number" min="1" step="1" value="1" required>
+          </label>
+
+          <label>
             <span>第何回</span>
             <input id="assignmentNumberInput" type="number" min="1" step="1" value="1" required>
+          </label>
+
+          <label class="checkbox-label">
+            <input id="completeStepInput" type="checkbox">
+            <span>「完」を使う</span>
           </label>
 
           <button class="add-button" type="submit">追加</button>
@@ -65,6 +75,6 @@
     </section>
   </main>
 
-  <script src="script.js?v=5"></script>
+  <script src="script.js?v=6"></script>
 </body>
 </html>

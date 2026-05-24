@@ -1,10 +1,10 @@
-const CACHE_NAME = "assignment-checker-v6";
+const CACHE_NAME = "assignment-checker-v7";
 
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
-  "./style.css?v=5",
-  "./script.js?v=5",
+  "./style.css?v=6",
+  "./script.js?v=6",
   "./manifest.json",
   "./icon-192.png",
   "./icon-512.png"

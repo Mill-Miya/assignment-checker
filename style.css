@@ -144,6 +144,16 @@ h1 {
   color: #dcfce7;
 }
 
+.task-button.is-complete {
+  border-color: #9a3412;
+  background: #24150a;
+}
+
+.task-button.is-complete .status {
+  background: #f97316;
+  color: #fff7ed;
+}
+
 .empty {
   margin: 18px 0 0;
   padding: 22px 14px;
@@ -187,6 +197,20 @@ h2 {
   font-weight: 700;
 }
 
+.class-form .checkbox-label,
+.step-edit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-label input,
+.step-edit input {
+  width: 22px;
+  min-height: 22px;
+  accent-color: #f97316;
+}
+
 .edit-toggle-button,
 .add-button,
 .delete-button {
@@ -224,13 +248,20 @@ h2 {
 .class-row {
   min-height: 58px;
   display: grid;
-  grid-template-columns: 1fr 84px 58px;
+  grid-template-columns: 1fr;
   align-items: center;
   gap: 10px;
   padding: 10px;
   border: 1px solid #334155;
   border-radius: 8px;
   background: #111827;
+}
+
+.class-controls {
+  display: grid;
+  grid-template-columns: 72px 84px 1fr 58px;
+  align-items: end;
+  gap: 10px;
 }
 
 .class-info {
@@ -250,6 +281,7 @@ h2 {
   font-size: 13px;
 }
 
+.small-edit,
 .number-edit {
   display: grid;
   gap: 4px;
@@ -258,7 +290,19 @@ h2 {
   font-weight: 700;
 }
 
+.small-edit input,
 .number-edit input {
   min-height: 42px;
   padding: 8px;
+}
+
+@media (max-width: 380px) {
+  .class-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .step-edit,
+  .delete-button {
+    width: 100%;
+  }
 }
