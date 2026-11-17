@@ -1,4 +1,4 @@
-const CACHE_NAME = "assignment-checker-v8";
+const CACHE_NAME = "assignment-checker-v9";
 
 const FILES_TO_CACHE = [
   "./",
