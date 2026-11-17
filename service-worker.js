@@ -1,11 +1,12 @@
-const CACHE_NAME = "assignment-checker-v7";
+const CACHE_NAME = "assignment-checker-v8";
 
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
-  "./style.css?v=6",
-  "./script.js?v=6",
+  "./style.css?v=8",
+  "./script.js?v=8",
   "./manifest.json",
+  "./assets/brand/r-logo-black.svg",
   "./icon-192.png",
   "./icon-512.png"
 ];
